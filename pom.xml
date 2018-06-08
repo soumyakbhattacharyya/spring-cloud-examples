@@ -46,4 +46,7 @@
 		</plugins>
 	</build>
 
+	<modules>
+		<module>employee-service</module>
+	</modules>
 </project>
