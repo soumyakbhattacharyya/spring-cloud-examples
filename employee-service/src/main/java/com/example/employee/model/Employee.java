@@ -1,4 +1,4 @@
-package com.example.employee.service.model;
+package com.example.employee.model;
 
 public class Employee {
 

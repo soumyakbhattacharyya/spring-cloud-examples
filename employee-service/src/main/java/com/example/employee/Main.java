@@ -1,4 +1,4 @@
-package com.example.employee.service;
+package com.example.employee;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -19,10 +19,10 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
 @EnableSwagger2
-public class EmployeeServiceApplication {
+public class Main {
 
 	public static void main(String[] args) {
-		SpringApplication.run(EmployeeServiceApplication.class, args);
+		SpringApplication.run(Main.class, args);
 	}
 
 	// TODO : following link https://github.com/springfox/springfox/issues/2191 has
@@ -35,7 +35,7 @@ public class EmployeeServiceApplication {
 		ApiInfoBuilder builder = new ApiInfoBuilder().title("Employee Service Api Documentation")
 				.description("Documentation automatically generated").version(model.getVersion());
 		return new Docket(DocumentationType.SWAGGER_2).select()
-				.apis(RequestHandlerSelectors.basePackage("com.example.employee.service.controller"))
+				.apis(RequestHandlerSelectors.basePackage("com.example.employee.controller"))
 				.paths(PathSelectors.any()).build().apiInfo(builder.build());
 	}
 }
