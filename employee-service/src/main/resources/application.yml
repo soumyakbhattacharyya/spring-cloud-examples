@@ -10,3 +10,6 @@ logging:
   level:
     org.springframework.web: DEBUG
   file: app.log
+management:
+  security:
+    enabled: false  

@@ -30,7 +30,6 @@ public class EmployeeServiceApplication {
 	// security
 	@Bean
 	public Docket api() throws IOException, XmlPullParserException {
-		System.out.println("hello");
 		MavenXpp3Reader reader = new MavenXpp3Reader();
 		Model model = reader.read(new FileReader("pom.xml"));
 		ApiInfoBuilder builder = new ApiInfoBuilder().title("Employee Service Api Documentation")
