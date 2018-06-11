@@ -52,6 +52,11 @@
 			<groupId>org.apache.maven</groupId>
 			<artifactId>maven-model</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<optional>true</optional>
+		</dependency>
 
 	</dependencies>
 
@@ -79,7 +84,8 @@
 				<groupId>pl.project13.maven</groupId>
 				<artifactId>git-commit-id-plugin</artifactId>
 				<configuration>
-					<failOnNoGitDirectory>false</failOnNoGitDirectory> <!-- ensures that, build is not failed even in case git information is not found -->
+					<failOnNoGitDirectory>false</failOnNoGitDirectory> <!-- ensures that, build is not failed even in case git information is not 
+						found -->
 				</configuration>
 			</plugin>
 

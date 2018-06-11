@@ -24,6 +24,7 @@ public class EmployeeController {
 
 	@GetMapping
 	public List<Employee> findAll() {
+		// a simple comment about what this complicated method does
 		return service.findAll();
 	}
 
