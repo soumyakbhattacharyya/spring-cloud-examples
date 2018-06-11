@@ -65,5 +65,6 @@
 	<modules>
 		<module>employee-service</module>
 		<module>department-service</module>
+		<module>../discovery-server</module>
 	</modules>
 </project>
